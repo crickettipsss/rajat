@@ -2,186 +2,92 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TOSS KING RAJAT</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-  background:#020e19;
-  color:#eafaff;
-  font-family:Arial,sans-serif;
-  text-align:center;
-  min-height:100vh;
-  overflow-x:hidden;
+background:#020e19;color:#eafaff;
+font-family:Arial,sans-serif;text-align:center;
+overflow-x:hidden
 }
-
 .container{
-  width:100%;
-  max-width:480px;
-  margin:auto;
-  padding:14px 18px 16px;
+width:100%;max-width:480px;margin:auto;
+padding:9px 13px 12px
 }
-
-.badge-top{
-  display:inline-block;
-  color:#00e6c0;
-  border:1px solid #006c65;
-  background:#002b2c;
-  border-radius:30px;
-  padding:9px 18px;
-  font-size:13px;
-  font-weight:bold;
-  letter-spacing:2px;
-  margin-bottom:20px;
+.badge{
+display:inline-block;background:#002b2c;
+border:1px solid #006c65;color:#00e6c0;
+border-radius:25px;padding:7px 15px;
+font-size:12px;letter-spacing:1.5px;
+font-weight:bold;margin-bottom:14px
 }
-
 .logo{
-  width:116px;
-  height:116px;
-  border-radius:50%;
-  object-fit:cover;
-  border:5px solid #00d9b0;
-  padding:5px;
-  box-shadow:0 0 22px #00d9b077;
-  margin-bottom:15px;
+width:86px;height:86px;object-fit:cover;
+border-radius:50%;border:4px solid #00d9b0;
+padding:4px;box-shadow:0 0 18px #00d9b077;
+margin-bottom:10px
 }
-
-h1{
-  font-size:clamp(30px,8vw,44px);
-  font-weight:800;
-  letter-spacing:-1px;
-  margin-bottom:12px;
-}
-
-h1 span{
-  color:#00d9c8;
-}
-
+h1{font-size:32px;margin-bottom:9px}
+h1 span{color:#00d9c8}
 .subtitle{
-  color:#9aafbd;
-  font-size:15px;
-  line-height:1.5;
-  margin:0 auto 24px;
-  max-width:370px;
+font-size:14px;line-height:1.4;
+color:#9aafbd;margin:0 auto 17px;
+max-width:370px
 }
-
-.section-title{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  color:#7895a4;
-  font-size:14px;
-  letter-spacing:4px;
-  font-weight:bold;
-  margin:18px 0 20px;
+.section{
+display:flex;align-items:center;gap:10px;
+color:#7895a4;font-size:12px;
+letter-spacing:3px;font-weight:bold;
+margin:12px 0 14px
 }
-
-.section-title:before,
-.section-title:after{
-  content:"";
-  flex:1;
-  height:1px;
-  background:#294654;
+.section:before,.section:after{
+content:"";height:1px;background:#294654;flex:1
 }
-
 .features{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
+display:grid;grid-template-columns:1fr 1fr;gap:9px
 }
-
 .feature{
-  background:#042532;
-  border:1px solid #164654;
-  border-radius:20px;
-  padding:15px 8px;
+background:#042532;border:1px solid #164654;
+border-radius:15px;padding:10px 6px
 }
-
-.feature .emoji{
-  font-size:30px;
-  margin-bottom:7px;
-}
-
-.feature h3{
-  font-size:16px;
-  margin-bottom:7px;
-}
-
+.emoji{font-size:23px;margin-bottom:5px}
+.feature h3{font-size:14px;margin-bottom:5px}
 .feature p{
-  font-size:13px;
-  line-height:1.4;
-  color:#9db1be;
+font-size:12px;line-height:1.35;color:#9db1be
 }
-
-.join{
-  margin-top:30px;
+.join{margin-top:20px}
+.join h2{font-size:24px;margin-bottom:7px}
+.join p{font-size:14px;color:#9aafbd;margin-bottom:16px}
+.btn{
+display:block;width:100%;padding:15px 5px;
+border-radius:17px;
+background:linear-gradient(100deg,#00cbd5,#00e6a1);
+color:#001c26;font-size:19px;font-weight:bold;
+text-decoration:none;box-shadow:0 0 16px #00dcb455
 }
-
-.join h2{
-  font-size:29px;
-  margin-bottom:10px;
-}
-
-.join p{
-  font-size:15px;
-  color:#9aafbd;
-  margin-bottom:23px;
-}
-
-.join-btn{
-  display:block;
-  width:100%;
-  padding:20px 8px;
-  border-radius:22px;
-  background:linear-gradient(100deg,#00cbd5,#00e6a1);
-  color:#001c26;
-  font-size:23px;
-  font-weight:bold;
-  text-decoration:none;
-  box-shadow:0 0 20px #00dcb455;
-}
-
 .access{
-  margin-top:19px;
-  font-size:14px;
-  color:#9bb3bf;
-  font-weight:bold;
+margin-top:14px;font-size:12px;
+color:#9bb3bf;font-weight:bold
 }
-
-.access span{
-  color:#00e6b5;
-}
-
+.access span{color:#00e6b5}
 .footer{
-  margin-top:27px;
-  color:#7895a4;
-  font-size:13px;
-  line-height:1.5;
+margin-top:18px;color:#7895a4;
+font-size:11px;line-height:1.4
 }
-
 .footer strong{
-  display:block;
-  letter-spacing:3px;
-  font-size:16px;
-  margin-bottom:12px;
+display:block;font-size:14px;
+letter-spacing:2px;margin-bottom:7px
 }
-
-@media(max-height:720px){
-  .container{padding-top:9px;}
-  .badge-top{margin-bottom:12px;padding:7px 15px;}
-  .logo{width:94px;height:94px;margin-bottom:10px;}
-  .subtitle{margin-bottom:17px;}
-  .section-title{margin:12px 0 14px;}
-  .feature{padding:11px 7px;}
-  .join{margin-top:20px;}
-  .join-btn{padding:16px 8px;}
-  .footer{margin-top:18px;}
+@media(max-width:380px){
+.logo{width:78px;height:78px}
+h1{font-size:29px}
+.feature{padding:9px 5px}
+.feature h3{font-size:13px}
+.feature p{font-size:11px}
+.join h2{font-size:22px}
+.btn{font-size:18px;padding:14px 5px}
 }
 </style>
 </head>
@@ -189,68 +95,66 @@ h1 span{
 <body>
 <div class="container">
 
-  <div class="badge-top">● CRICKET INSIGHTS HUB</div>
+<div class="badge">● CRICKET INSIGHTS HUB</div>
 
-  <div>
-    <img src="logo.jpg" class="logo" alt="Toss King Rajat Logo">
-  </div>
+<div>
+<img src="logo.jpg" class="logo" alt="TOSS KING RAJAT">
+</div>
 
-  <h1>TOSS KING <span>RAJAT</span></h1>
+<h1>TOSS KING <span>RAJAT</span></h1>
 
-  <p class="subtitle">
-    Your dedicated space for cricket insights, match reports &amp;
-    informed cricket discussions.
-  </p>
+<p class="subtitle">
+Your dedicated space for cricket insights, match reports &amp; informed cricket discussions.
+</p>
 
-  <div class="section-title">WHAT'S INSIDE</div>
+<div class="section">WHAT'S INSIDE</div>
 
-  <div class="features">
+<div class="features">
 
-    <div class="feature">
-      <div class="emoji">🏏</div>
-      <h3>Match Reports</h3>
-      <p>Detailed cricket insights &amp; match breakdowns</p>
-    </div>
+<div class="feature">
+<div class="emoji">🏏</div>
+<h3>Match Reports</h3>
+<p>Detailed cricket insights &amp; match breakdowns</p>
+</div>
 
-    <div class="feature">
-      <div class="emoji">📊</div>
-      <h3>Trading Insights</h3>
-      <p>Analysis-driven cricket discussions</p>
-    </div>
+<div class="feature">
+<div class="emoji">📊</div>
+<h3>Trading Insights</h3>
+<p>Analysis-driven cricket discussions</p>
+</div>
 
-    <div class="feature">
-      <div class="emoji">⚡</div>
-      <h3>Timely Updates</h3>
-      <p>Stay connected with match developments</p>
-    </div>
+<div class="feature">
+<div class="emoji">⚡</div>
+<h3>Timely Updates</h3>
+<p>Stay connected with match developments</p>
+</div>
 
-    <div class="feature">
-      <div class="emoji">🎯</div>
-      <h3>Expert Perspective</h3>
-      <p>Structured reports &amp; analytical viewpoints</p>
-    </div>
+<div class="feature">
+<div class="emoji">🎯</div>
+<h3>Expert Perspective</h3>
+<p>Structured reports &amp; analytical viewpoints</p>
+</div>
 
-  </div>
+</div>
 
-  <div class="join">
-    <h2>JOIN TOSS KING RAJAT</h2>
-    <p>Be part of our cricket insights community.</p>
+<div class="join">
+<h2>JOIN TOSS KING RAJAT</h2>
+<p>Be part of our cricket insights community.</p>
 
-    <a class="join-btn"
-       href="https://t.me/+74g37vSqfps4M2E1">
-       JOIN ON TELEGRAM →
-    </a>
-  </div>
+<a class="btn" href="https://t.me/+74g37vSqfps4M2E1">
+JOIN ON TELEGRAM →
+</a>
+</div>
 
-  <div class="access">
-    <span>●</span> ONE CLICK TO ACCESS THE COMMUNITY
-  </div>
+<div class="access">
+<span>●</span> ONE CLICK TO ACCESS THE COMMUNITY
+</div>
 
-  <div class="footer">
-    <strong>TOSS KING RAJAT</strong>
-    Cricket analysis and reports are informational.
-    No outcome or financial return is guaranteed.
-  </div>
+<div class="footer">
+<strong>TOSS KING RAJAT</strong>
+Cricket analysis and reports are informational.
+No outcome or financial return is guaranteed.
+</div>
 
 </div>
 </body>
